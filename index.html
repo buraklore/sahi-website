@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sahi — Yasal Bilgiler</title>
+<meta name="description" content="Sahi uygulamasının Gizlilik Politikası, Kullanım Koşulları ve KVKK Aydınlatma Metni." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="brand">
+      <svg class="heart" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="h" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FFFFFF"/>
+            <stop offset="1" stop-color="#FFD2E0"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#h)" d="M16 28S3 20.6 3 11.8C3 7.5 6.4 4 10.6 4c2.6 0 4.6 1.3 5.4 3.2C16.8 5.3 18.8 4 21.4 4 25.6 4 29 7.5 29 11.8 29 20.6 16 28 16 28Z"/>
+      </svg>
+      Sahi
+    </div>
+    <h1>Yasal Bilgiler</h1>
+    <p>Gizliliğin bizim için önemli. Sahi'de verilerinin nasıl işlendiğini ve uygulamayı kullanırken geçerli kuralları aşağıda bulabilirsin.</p>
+  </header>
+
+  <main class="cards">
+    <a class="card" href="gizlilik.html">
+      <div class="ic">🔒</div>
+      <h3>Gizlilik Politikası</h3>
+      <p>Hangi verileri topladığımız, nasıl kullandığımız ve haklarımız.</p>
+    </a>
+    <a class="card" href="kosullar.html">
+      <div class="ic">📋</div>
+      <h3>Kullanım Koşulları</h3>
+      <p>Uygulamayı kullanırken uyman gereken kurallar ve içerik politikası.</p>
+    </a>
+    <a class="card" href="kvkk.html">
+      <div class="ic">🛡️</div>
+      <h3>KVKK Aydınlatma Metni</h3>
+      <p>6698 sayılı kanun kapsamında kişisel verilerin işlenmesi.</p>
+    </a>
+  </main>
+
+  <div class="wrap" style="padding-top:48px;">
+    <p style="color:var(--muted);text-align:center;font-size:15px;">
+      Sorularınız için bize <a href="mailto:{{ILETISIM_EPOSTA}}">{{ILETISIM_EPOSTA}}</a> adresinden ulaşabilirsiniz.
+    </p>
+  </div>
+
+  <footer class="footer">
+    <div>© <span id="y"></span> Sahi</div>
+    <div style="margin-top:8px;">
+      <a href="gizlilik.html">Gizlilik</a> ·
+      <a href="kosullar.html">Koşullar</a> ·
+      <a href="kvkk.html">KVKK</a>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
